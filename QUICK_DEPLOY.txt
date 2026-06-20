@@ -1,0 +1,69 @@
+# ⚡ Quick Deploy Checklist
+
+## What You Need
+- [x] Free GitHub account (https://github.com/signup)
+- [x] Free Streamlit account (auto-created via GitHub login)
+
+## Files to Upload to GitHub
+
+**1. app.py** → Main app code (rename from `oil_predictor_app.py`)
+
+**2. requirements.txt**
+```
+streamlit>=1.28.0
+yfinance>=0.2.32
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+```
+
+**3. .streamlit/config.toml** (optional, for styling)
+```toml
+[theme]
+primaryColor = "#f0a500"
+backgroundColor = "#0f1117"
+secondaryBackgroundColor = "#1c1f2e"
+textColor = "#e0e0e0"
+font = "sans serif"
+```
+
+## Deployment Steps
+
+```
+1. Create GitHub repo: github.com/new
+   → Name: oil-price-predictor
+   → Public (required for free)
+   
+2. Upload 3 files above to repo root
+
+3. Go to: https://share.streamlit.io
+
+4. Click "New app"
+
+5. Select:
+   Repository: username/oil-price-predictor
+   Branch: main
+   Main file: app.py
+
+6. Click "Deploy" → Done! (1-2 min build time)
+```
+
+## Your Live URL
+```
+https://oil-price-predictor-xxxxx.streamlit.app
+```
+
+Share this anywhere. No installation needed.
+
+## To Update
+```bash
+git push origin main
+# Auto-redeploys in 1-2 minutes
+```
+
+---
+
+**Questions?**
+- Streamlit docs: https://docs.streamlit.io
+- GitHub help: https://docs.github.com
